@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Constants.cs">
+    <Files>
+      <File FileName="Assets/Slingshot.cs" Line="51" Column="63" />
+      <File FileName="Assets/FollowCam.cs" Line="41" Column="3" />
+      <File FileName="Assets/HeatTrans.cs" Line="48" Column="18" />
+      <File FileName="Assets/Constants.cs" Line="9" Column="34" />
+      <File FileName="Assets/Fireton.cs" Line="21" Column="44" />
+      <File FileName="Assets/PurishByTime.cs" Line="9" Column="39" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
