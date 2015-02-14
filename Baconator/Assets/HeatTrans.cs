@@ -4,6 +4,9 @@ using System.Collections;
 public class HeatTrans : MonoBehaviour {
 
 	public GameObject prefabFireton;
+	public int lightEnergy = Constants.lightEnergy;
+	public int basicEnergy = Constants.maxEnergy;
+
 
 	public int energy;
 	public bool isBurning;
@@ -25,17 +28,17 @@ public class HeatTrans : MonoBehaviour {
 	public void heated()
 	{
 		energy++;
-		if(!isBurning && energy > Constants.lightEnergy)
+		if(!isBurning && energy > lightEnergy)
 		{
 			isBurning = true;
-			renderer.material.color = new Color(1.0f, 0, 0, 1.0f);
+			renderer.material.color = Color.Lerp(renderer.material.color, Color.red, 0.5f);
 			StartCoroutine (burning());
 		}
 	}
 
 	IEnumerator burning()
 	{
-		energy = Constants.maxEnergy;
+		energy = basicEnergy;
 
 //		int fireNum = 10;
 
@@ -52,7 +55,7 @@ public class HeatTrans : MonoBehaviour {
 			fireton.rigidbody.velocity = new Vector2 (Mathf.Sin(degreeDelta), Mathf.Cos(degreeDelta)).normalized;
 			fireton.rigidbody.velocity *= 1.8f;
 		}
-		renderer.material.color = new Color(0, 0, 0, 1.0f);
+		renderer.material.color = Color.Lerp(Color.white, Color.black, renderer.material.color.g);
 
 	}
 
