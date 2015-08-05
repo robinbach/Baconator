@@ -4,6 +4,8 @@ using System.Collections;
 public class Combustible : MonoBehaviour {
 
 	public GameObject prefabFireton;
+	public GameObject prefabHeatcore;
+
 	public int lightEnergy = Constants.lightEnergy;
 	public int energyPerUnit = Constants.unitEnergy;
 
@@ -37,7 +39,7 @@ public class Combustible : MonoBehaviour {
 		if(!isBurning && energy > lightEnergy * energyUnits/5f)
 		{
 			isBurning = true;
-			renderer.material.color = Color.Lerp(renderer.material.color, Color.red, 0.5f);
+			GetComponent<Renderer>().material.color = Color.Lerp(GetComponent<Renderer>().material.color, Color.red, 0.5f);
 			StartCoroutine (burning());
 		}
 	}
@@ -58,12 +60,12 @@ public class Combustible : MonoBehaviour {
 			Fireton firetonScript = fireton.GetComponent<Fireton>();
 
 			firetonScript.initParent(this.gameObject.GetInstanceID());
-			fireton.rigidbody.velocity 
+			fireton.GetComponent<Rigidbody>().velocity 
 //				= new Vector2 (transform.localScale.x * Mathf.Sin(degreeDelta),
 //				               transform.localScale.y * Mathf.Cos(degreeDelta)).normalized;
 				= new Vector2 (Mathf.Sin(degreeDelta),
 				               Mathf.Cos(degreeDelta)).normalized;
-			fireton.rigidbody.velocity *= radioRange;
+			fireton.GetComponent<Rigidbody>().velocity *= radioRange;
 
 			if(energy < 25)
 			{
@@ -71,9 +73,14 @@ public class Combustible : MonoBehaviour {
 					= initScale * (energy/50f + 0.5f);
 			}
 		}
-		renderer.material.color = Color.Lerp(Color.white, Color.black, renderer.material.color.g);
+		GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.black, GetComponent<Renderer>().material.color.g);
 		isBurned = true;
+
+		// TODO create collectable energy (Heatcore)
+		GameObject heatcore 
+			= Instantiate (prefabHeatcore, transform.position, Quaternion.identity) as GameObject;
 	}
+
 
 
 

@@ -24,8 +24,8 @@ public class Lighter: Combustible {
 			Fireton firetonScript = fireton.GetComponent<Fireton>();
 
 			firetonScript.initParent(this.gameObject.GetInstanceID());
-			fireton.rigidbody.velocity = new Vector2 (Mathf.Sin(degreeDelta), Mathf.Cos(degreeDelta)).normalized;
-			fireton.rigidbody.velocity *= 10f;
+			fireton.GetComponent<Rigidbody>().velocity = new Vector2 (Mathf.Sin(degreeDelta), Mathf.Cos(degreeDelta)).normalized;
+			fireton.GetComponent<Rigidbody>().velocity *= 10f;
 		}
 	}
 

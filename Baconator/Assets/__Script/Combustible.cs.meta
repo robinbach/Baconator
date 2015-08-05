@@ -1,8 +1,14 @@
 fileFormatVersion: 2
 guid: 35632aceda92344aeb6e4415f93dc809
+timeCreated: 1427245936
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - prefabFireton: {fileID: 185034, guid: f4160fc4803424daeae7a56e8dce2e80, type: 2}
+  - prefabHeatcore: {fileID: 185034, guid: 20ec607e878c44f668fb210896d6d21c, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

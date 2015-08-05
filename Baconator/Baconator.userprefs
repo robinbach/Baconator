@@ -1,19 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ShowInstruction.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/__Script/Combustible.cs">
     <Files>
-      <File FileName="Assets/__Script/EnvirStatus.cs" Line="57" Column="30" />
-      <File FileName="Assets/__Script/Constants.cs" Line="1" Column="1" />
       <File FileName="Assets/__Script/Fireton.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/LightUp.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/Lighter.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/FollowCam.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/TimeControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/EnergyMeter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Skills.cs" Line="18" Column="2" />
+      <File FileName="Assets/ClickHeatcore.cs" Line="7" Column="3" />
       <File FileName="Assets/HighScore.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/LoadLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets/__Script/ResetLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets/ShowInstruction.cs" Line="16" Column="2" />
+      <File FileName="Assets/ShowInstruction.cs" Line="1" Column="1" />
+      <File FileName="Assets/__Script/EnvirStatus.cs" Line="24" Column="22" />
+      <File FileName="Assets/__Script/EnergyMeter.cs" Line="1" Column="1" />
+      <File FileName="Assets/__Script/Combustible.cs" Line="80" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

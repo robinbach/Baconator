@@ -40,6 +40,8 @@ public class EnergyMeter : MonoBehaviour {
 
 		txt.text += "\r\n" + "Time:\t" + timeCost.ToString("f1");
 
+		txt.text += "\r\n" + "Heatcore:\t" + Skills.HeatcoreNum;
+
 		if(status.isGameOver)
 		{
 			if(status.isWon)
